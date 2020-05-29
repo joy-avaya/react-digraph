@@ -673,19 +673,6 @@ class Edge extends React.Component<IEdgeProps> {
             transform={edgeHandleTransformation}
             style={{ transform: edgeHandleTransformation }}
           />
-          {data.handleText && (
-            <EdgeHandleText
-              handleText={data.handleText}
-              edgeHandleTranslation={this.getEdgeHandleTranslation()}
-            />
-          )}
-          {data.label_from && data.label_to && (
-            <EdgeLabelText
-              data={data}
-              edgeHandleRotation={this.getEdgeHandleRotation()}
-              edgeHandleTranslation={this.getEdgeHandleTranslation()}
-            />
-          )}
         </g>
         <g className="edge-mouse-handler">
           <title>{data.handleTooltipText}</title>
